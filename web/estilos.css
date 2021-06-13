@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+.centrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    color: #c62828;
+}
+
+.cabecera {
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0D47A1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lista-cabecera {
+    list-style: none;
+    display: flex;
+}
+.imagen-texto {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Media queries para hacer responsivo */
+
+@media only screen and (max-width: 768px) {
+    .imagen-texto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabecera {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-texto p {
+        font-size: 28px;
+        margin-top: 5px;
+        margin-bottom: 0px
+    }
+    .lista-cabecera {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .imagen-texto img {
+        margin-right: 10px;
+    }
+    .lista-cabecera li a {
+        margin-right: 10px;
+    }
+}
+
+
+button {
+    font-family: inherit;
+    background-color: #0D47A1;
+    color: #fff;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    border: none;
+}
+
+label {
+    font-size: .75rem;
+    color: #263238
+}
+
+input {
+    padding: 5px;
+    font-family: inherit;
+}
+
+select {
+    font-family: inherit;
+    border-radius: .25rem;
+    padding: 5px;
+}
+
+fieldset {
+    border-radius: 8px;
+    border-color: #0D47A1
+}
+
+table {
+    border-color: #0D47A1;
+}
+
+table thead {
+    color: #0D47A1;
+}
